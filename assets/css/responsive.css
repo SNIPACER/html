@@ -1,0 +1,159 @@
+/*
+Theme Name: RB Blog One
+Theme URI: https://github.com/BashirRased/wp-theme-rb-blog-one
+Text Domain: rb-blog-one
+Version: 1.1.4
+Requires at least: 5.3
+Tested up to: 5.8
+Requires PHP: 5.6
+Description: This is a personal free blog website theme.
+Tags: one-column, blog, custom-logo, custom-menu, featured-images, right-sidebar
+Author: Bashir Rased
+Author URI: http://bashir-rased.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*=============================
+Table of CSS Content Start Here
+===============================
+	01. @media (min-width: 992px)-------------->Line 27
+	02. @media (max-width: 991px)-------------->Line 40
+	03. @media (max-width: 575px)-------------->Line 115
+=============================
+Table of CSS Content End Here
+===========================*/
+
+/*==================================================
+01. @media (min-width: 992px) CSS Content Start Here
+==================================================*/
+@media (min-width: 992px) {
+
+    .rb-blog-one-header-desktop-menu ul li:hover > ul,
+    .rb-blog-one-header-desktop-menu ul li:focus-within > ul,
+    .rb-blog-one-header-desktop-menu ul li a:focus + ul {
+        left: 0;
+    }
+
+    .rb-blog-one-header-desktop-menu ul li ul li:hover > ul,
+    .rb-blog-one-header-desktop-menu ul li ul li:focus-within > ul {
+        left: 100%;
+        top: 0;
+    }
+}
+
+/*================================================
+01. @media (min-width: 992px) CSS Content End Here
+================================================*/
+
+/*==================================================
+02. @media (max-width: 991px) CSS Content Start Here
+==================================================*/
+@media (max-width: 991px) {
+    .rb-blog-one-header-top-left {
+        text-align: center;
+    }
+
+    .rb-blog-one-header-body-left {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rb-blog-one-mobile-menu-area {
+        display: block;
+    }
+
+    .menu-item-has-children a > i {
+        display: none;
+    }
+
+    .menu-item-has-children a button {
+        display: block;
+    }
+
+    .rb-blog-one-header-desktop-menu {
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .rb-blog-one-header-desktop-menu.rb-blog-one-menu-open {
+        display: block;
+    }
+
+    .rb-blog-one-header-desktop-menu ul li {
+        float: none;
+    }
+
+    .rb-blog-one-header-desktop-menu ul li a {
+        display: block;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .rb-blog-one-header-desktop-menu ul li:last-child a {
+        border-bottom: none;
+    }
+
+    .rb-blog-one-dropdown-menu-open {
+        position: static !important;
+    }
+
+    .rb-blog-one-breadcrumbs-left {
+        text-align: center;
+    }
+
+    .rb-blog-one-breadcrumbs-left h2 {
+        padding: 30px 0;
+    }
+
+    .rb-blog-one-breadcrumbs-right {
+        float: none !important;
+        text-align: center;
+    }
+
+    .rb-blog-one-breadcrumbs-right ul {
+        padding: 15px 0;
+    }
+
+    .rb-blog-one-sidebar-area {
+        margin-top: 20px;
+    }
+}
+
+/*================================================
+02. @media (max-width: 991px) CSS Content End Here
+================================================*/
+
+/*==================================================
+03. @media (max-width: 575px) CSS Content Start Here
+==================================================*/
+@media (max-width: 575px) {
+    .rb-blog-one-error-area h1 {
+        font-size: 100px;
+    }
+
+    .rb-blog-one-post-content blockquote {
+        margin-left: 0;
+    }
+
+    .rb-blog-one-post-content .wp-block-search {
+        margin: 20px 0 70px;
+    }
+
+    .rb-blog-one-post-content .wp-block-search button {
+        bottom: -50px;
+        width: 100%;
+    }
+    
+    .rb-blog-one-cart-content #coupon_code {
+        width: 100% !important;
+        margin-bottom: 5px;
+    }
+    
+    .rb-blog-one-cart-content .coupon button {
+        width: 100% !important;
+    }
+}
+
+/*================================================
+03. @media (max-width: 575px) CSS Content End Here
+================================================*/
